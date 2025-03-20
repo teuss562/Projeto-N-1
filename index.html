@@ -14,18 +14,25 @@
 
         body {
             background: url('https://static.wixstatic.com/media/ed77cb_0059da2f7a80450ca1a7321c807e7727~mv2.png') no-repeat center center fixed;
-            background-size: auto; /* Mantém o tamanho original da imagem */
-            background-color: #f4f4f4; /* Cor de fundo caso a imagem não cubra tudo */
+            background-size: cover;
+            background-color: #121212; /* Fundo escuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+            background: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
             width: 100%;
             max-width: 400px;
             text-align: center;
+            color: #fff; /* Texto branco */
+            border: 2px solid #fff; /* Bordas brancas */
         }
 
         h2 {
@@ -42,14 +49,21 @@
             align-self: flex-start;
             font-weight: bold;
             margin-bottom: 5px;
+            color: #fff; /* Cor do texto das labels */
         }
 
         input {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid #fff; /* Bordas brancas */
             border-radius: 5px;
+            background: transparent;
+            color: #fff;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
         }
 
         button {
